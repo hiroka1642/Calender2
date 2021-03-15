@@ -1,5 +1,6 @@
 table{
   width: 500px;
+  color: aliceblue;
 }
 
 th,td{
@@ -14,5 +15,37 @@ thead{
 }
 
 tr{
-  width: 500px;
+  width: 600px;
 }
+
+.prev,
+.next{
+  background-color: rgb(167, 167, 167);
+}
+
+#date{
+  background-color: rgb(241, 180, 228);
+}
+.day,
+tfoot{
+  color: rgb(165, 165, 165);
+}
+.sunday{
+  color: rgb(199, 35, 35);
+}
+
+.saturday{
+  color: rgb(55, 112, 197);
+}
+
+.today{
+  background-color: brown;
+  color: aliceblue;
+}
+
+button{
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
