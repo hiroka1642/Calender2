@@ -38,6 +38,7 @@
 
 
 //カレンダーの配列作り
+//先月の日付を加える
 for(let i=0;i<prevgetsumatsu.getDay()+1;i++){
   calenderdate.push(prevgetsumatsu.getDate()-i);
 }
@@ -54,7 +55,7 @@ for(let i=1;i<7-getsumatsu.getDay();i++){
 
 console.log(calenderdate);
 
-//trにtdを６個ずつ加える
+//trにtdを７個ずつ加える
 const date=document.getElementById('date');
 
 for(let i=1;i<6;i++){
@@ -74,6 +75,27 @@ for(let i=1;i<6;i++){
   date.appendChild(newTr);
 }
 console.log(date);
+
+//○番目の要素まで、prevクラスをつける
+for(let i=0; i<new Date(today.getFullYear(),today.getMonth(),1).getDay();i++){
+  date.firstElementChild.children[i].classList.add('prev');
+}
+
+//○番目の要素まで、nextクラスをつける
+for(let i=0; i<6-getsumatsu.getDay();i++){
+  date.lastElementChild.children[6-i].classList.add('next');
+}
+console.log(date);
+
+//日曜日にクラスをつける
+
+  const trs=date.getElementsByTagName('tr');
+
+  for(let i=0;i<5;i++){
+    trs[i].firstElementChild.classList.add('sunday')
+  }
+  
+getElementsByTagName
 
 
 
