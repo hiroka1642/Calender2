@@ -1,6 +1,9 @@
+#calender{
+  height: 190px;
+}
 table{
-  width: 500px;
   color: aliceblue;
+  width: 500px;
 }
 
 th,td{
@@ -56,6 +59,7 @@ button{
 .btn{
   list-style: none;
   cursor: pointer;
+  padding: 0 10px;
 }
 
 .btn:hover{
