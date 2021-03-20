@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <h1 class='month'>2021年３月</h1>
-  <table >
+  <h1 id='month'></h1>
+  <table id='tb'>
     <thead class='day'><th class="sunday">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="saturday">土</th></thead>
     <tbody id='date'>
       
@@ -20,16 +20,17 @@
       <tr><td class="sunday">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="saturday">27</td></tr>
       <tr><td class="sunday">28</td><td>29</td><td>30</td><td >31</td><td class='next'>1</td><td class='next'>2</td><td class='next saturday'>3</td></tr> -->
       </tbody>
-      <tfoot class='nav'>
-        <tr>
-          <td colspan="2">◀︎prev</td>
-          <td colspan="3">today</td> 
-          <td colspan="2">next▶︎</td> 
-       </tr>
-      </tfoot>
+    </table>
+
+      <div >
+        <ul class='nav'>
+          <li colspan="2" id='prev' class='btn'>◀︎prev</li>
+          <li colspan="3" id='todaybtn' class='btn'>today</li> 
+          <li colspan="2" id='next' class='btn'>next▶︎</li> 
+        </ul>
+      </div>
   
 
-  </table>
 
 
 

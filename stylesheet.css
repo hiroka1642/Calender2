@@ -6,20 +6,16 @@ table{
 th,td{
   padding: 0px;
   margin: 0px;
-  width: 30px;
   text-align: center;
 }
+
 
 thead{
   border: 1px solid black;
 }
 
-tr{
-  width: 600px;
-}
 
-.prev,
-.next{
+.disabled{
   background-color: rgb(167, 167, 167);
 }
 
@@ -49,3 +45,23 @@ button{
   padding: 10px;
 }
 
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+.btn{
+  list-style: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: brown;
+}
+
+.btn:active{
+  color: rgb(255, 53, 53);
+}
